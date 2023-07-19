@@ -159,5 +159,11 @@ h3 {
 
     .container-dois {
         padding-left: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .content {
+        background-color: #EBEDEF;
+         height: 100%;
     }
 }
