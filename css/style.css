@@ -130,10 +130,20 @@ h3 {
     justify-content: center;
 }
 
+.container-footer div {
+    margin: 0 1rem;
+}
+
 .text-timer {
     color: white;
-    font-size: 1rem;
-    margin-right: 2rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.timer {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .btn-inscrever {
