@@ -6,13 +6,13 @@ $(document).ready(function() {
     // Adicione um evento de envio ao formulário
     $('#formulario-contato1').submit(function(event) {
       // Obtém o valor do campo de telefone
-      let telefone = $('#telefone').val();
+      let telefone = $('#telefone1').val();
 
       // Remove os caracteres indesejados (espaços, parênteses e traço)
       let numeros = telefone.replace(/\D/g, '');
 
       // Atualiza o valor do campo de telefone com apenas os dígitos
-      $('#telefone').val(numeros);
+      $('#telefone1').val(numeros);
     });
   });
 
@@ -24,12 +24,12 @@ $(document).ready(function() {
     // Adicione um evento de envio ao formulário
     $('#formulario-contato2').submit(function(event) {
       // Obtém o valor do campo de telefone
-      let telefone = $('#telefone').val();
+      let telefone = $('#telefone2').val();
 
       // Remove os caracteres indesejados (espaços, parênteses e traço)
       let numeros = telefone.replace(/\D/g, '');
 
       // Atualiza o valor do campo de telefone com apenas os dígitos
-      $('#telefone').val(numeros);
+      $('#telefone2').val(numeros);
     });
   });
