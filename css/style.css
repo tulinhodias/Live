@@ -10,7 +10,7 @@
 
 body {
     font-size: 62.5%;
-    font-family: sans-serif;
+    font-family: Montserrat;
 }
 
 h1 {
@@ -43,11 +43,11 @@ h3 {
 
 .content {
     background-color: #EBEDEF;
-    height: 100vh;
+    height: 100%;
 }
 
 .main {
-    max-width: 70rem;
+    max-width: 60rem;
     display: flex;
     flex-flow: wrap;
     margin: 0 auto;
@@ -57,6 +57,7 @@ h3 {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
 }
 
 .live {
@@ -74,12 +75,58 @@ h3 {
     padding-left: 4rem;
 }
 
+.form1 {
+    display: none;
+}
+
+.formulario-contato {
+    padding: 2rem;
+    background-color: rgb(204, 204, 204);
+    border-radius: 0.5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.formulario label {
+    font-size: 0.8rem;
+    color: #616161;
+    padding-bottom: 0.2rem;
+    font-family: Montserrat;
+}
+
+.formulario input {
+    font-size: 0.8rem;
+    height: 2.3rem;
+    padding: 0 0.5rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    border-radius: 0.2rem;
+    color: rgb(0, 0, 0, 0.7);
+    font-family: Montserrat;
+}
+
+.botao-inscrever {
+    padding: 0.8rem 3rem;
+    outline: none;
+    border: none;
+    background-color: yellow;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
 .gap {
     margin: 2rem 0;
 }
 
 .autor {
     display: flex;
+    margin-top: 2rem;
 }
 
 .dados_autor {
@@ -109,13 +156,13 @@ h3 {
     height: 5rem;
     background-color: black;
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
     left: 0;
 }
 
 .main-footer {
-    max-width: 70rem;
+    max-width: 60rem;
     display: flex;
     flex-flow: wrap;
     margin: 0 auto;
@@ -134,32 +181,30 @@ h3 {
     margin: 0 1rem;
 }
 
+.box-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .text-timer {
     color: white;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: 600;
 }
 
 .timer {
-    color: white;
+    color: yellow;
     font-size: 1.5rem;
     font-weight: 600;
-}
-
-.btn-inscrever {
-    background-color: yellow;
-    padding: 0.8rem 2rem;
-    border-radius: 0.3rem;
-    border-style: none;
-    font-weight: 600;
-    color: black;
 }
 
 
     /* Estilos para a notificação toast */
 .toast {
         position: fixed;
-        top: 1rem;
+        bottom: 1rem;
         right: 1rem;
         background-color: rgb(256, 0, 0, 0.7);
         color: #fff;
@@ -204,7 +249,26 @@ h3 {
     }
     
     .container {
-        padding: 2rem;
+        padding: 2rem 2rem 5rem 2rem;
+        width: 100%;
+    }
+
+    .form1  {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario label {
+        font-size: 1rem;
+    }
+    
+    .formulario input {
+        font-size: 1rem;
+    }
+
+    .botao-inscrever {
+        font-size: 1rem;
     }
 
     .container-dois {
@@ -215,5 +279,20 @@ h3 {
     .content {
         background-color: #EBEDEF;
          height: 100%;
+    }
+
+    .box-timer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-timer {
+        font-size: 0.7rem;
+    }
+
+    .container-dois {
+        display: none;
     }
 }

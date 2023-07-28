@@ -7,8 +7,16 @@
     <title>Live 🎥</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a3bed33f3e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="./js/countdown.js" defer></script>
     <script src="./js/notificacao.js" defer></script>
+    <script src="./js/maskinput.js" defer></script>
+    <!-- Inclua o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclua o jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -24,10 +32,25 @@
                         para impulsionar suas receitas e expandir sua base de pacientes.</h1>
                     <p class="p2">Descubra estratégias comprovadas para alcançar o sucesso
                         financeiro e o crescimento sustentável de seu consultório ou ou clínica.</p>
+
+                        <form id="formulario-contato1" class="formulario-contato form1" action="https://facebook.com">
+                            <div class="formulario">
+                                <label for="nome">Digite seu Nome</label>
+                                <input class="nome" id="nome" name="nome" type="text" required>
+                            </div>
+                            <div class="formulario">
+                                <label for="email">Digite seu Email</label>
+                                <input class="email" id="email" name="email" type="email" required>
+                            </div>
+                            <div class="formulario">
+                                <label for="telefone">DDD + Whatsapp</label>
+                                <input class="telefone" id="telefone1" name="telefone" type="text" required>
+                            </div>
+                            <button type="submit" class="botao-inscrever">Participar</button>
+                        </form>
+
                     <img class="live" src="https://lp.gprede.com.br/wp-content/uploads/2023/07/tumb-nova.jpg"
                         alt="live">
-                </div>
-                <div grid class="container container-dois">
                     <div class="autor">
                         <img class="logo"
                             src="https://lp.gprede.com.br/wp-content/uploads/2023/07/AVATAR-FABIO-1024x1024.png"
@@ -67,6 +90,23 @@
                         </ul>
                     </div>
                 </div>
+                <div grid class="container container-dois">
+                    <form id="formulario-contato2" class="formulario-contato form2" action="https://facebook.com">
+                        <div class="formulario">
+                            <label for="nome">Digite seu Nome</label>
+                            <input class="nome" id="nome" name="nome" type="text" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="email">Digite seu Email</label>
+                            <input class="email" id="email" name="email" type="email" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="telefone">DDD + Whatsapp</label>
+                            <input class="telefone" id="telefone2" name="telefone" type="text" required>
+                        </div>
+                        <button type="submit" class="botao-inscrever">Participar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -76,9 +116,6 @@
                 <div class="box-timer">
                     <p class="text-timer">A Live Começa em: </p>
                     <div id="contador" class="timer"></div>
-                </div>
-                <div class="box-botao">
-                    <button class="btn-inscrever">Participar</button>
                 </div>
             </div>
         </div>
